@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Final Project - Introduction to HTML 5">
+    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, COURSERA, UNIVERSITY OF MICHIGAN">
+    <meta name="author" content="Nathanael Andrade">
+    <meta name="professor" content="Colleen van Lent">
+
+    <title>Boteco do Brasil - Home</title>
+
+    <style>
+        .centro {
+            text-align: center;
+        }
+
+        nav ul {
+                list-style: none;   
+                background-color: rgb(236, 189, 184);     
+                padding: 10px;                  
+        }
+
+        nav ul li {
+            display: inline;
+            font-size: 1.2em;   
+                  
+        }
+
+        nav ul li a {
+            text-decoration: none;  
+        }
+
+        a:hover {
+            color :rgb(255, 254, 254);
+            background-color: rgb(110, 33, 19);
+            padding: 10px;
+        }
+
+        ol {
+             list-style: none;    
+             padding: 0px;   
+        }
+
+        main > div {
+            background-color: rgb(250, 231, 224);
+            padding: 10px
+        }       
+
+    </style>
+        
+</head>
+<body>
+    <div> <!-- armazena todo conteudo - container principal-->
+        <header class="centro">                   
+            
+            <nav >
+                <ul>
+                    <li><a href="#titulo">Title &nbsp;</a></li>
+                    <li><a href="#historia">History&nbsp;</a></li>
+                    <li><a href="#menu">Menu&nbsp;</a></li>
+                    <li><a href="#galeria">Gallery&nbsp;</a></li>
+                    <li><a href="https://www.minasgerais.com.br/pt/destinos/sao-joao-del-rei" target="_blank">The city</a></li>
+                </ul>  
+            </nav>      
+               
+        </header>
+        <main>
+            <div>
+                <section id="titulo" class="centro">
+                    <img src="imgs/logoBoteco.png" alt="logotipo do Boteco Brasil"  width="150">
+                    <h1> Boteco do Brasil</h1>
+                </section>
+                
+                <section id="historia" class="centro">
+                    <div>
+                        <h2>Our History</h2>
+                        
+                        <p> 
+                        I developed this proposal according to the specifications presented in the FINAL PROJECT DESCRIPTION. However, I took the liberty of adding some CSS styling to slightly improve the appearance of this initial work. CSS features were used to center the content, adjust and highlight the navigation lists (ul tags) by removing the bullet points and emphasizing these areas with a salmon-colored background. The background feature was also used to highlight the main area. I apologize if I went beyond the scope of the proposal.<br>
+                        To finish there's a link at the bottom of the page that carries a page with the results of the validation processes and shows the credits of images </p>
+                        <p>
+                        Quod neque fugiat quo animi itaque at culpa illo, nostrum quos ullam doloribus iste, similique repellat ducimus autem, non quisquam qui. Inventore! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam architecto eligendi perspiciatis hic qui quas laudantium, repellat consequatur? Culpa dolorem doloribus ipsam. Odit laudantium nam sunt fugiat modi, iste totam?</p>
+                        <p> 
+                        Nisi, inventore officiis sequi numquam deleniti quis ut quibusdam molestias exercitationem nesciunt quia consequatur soluta. Voluptatibus maxime, porro esse blanditiis accusamus a.
+                        Laboriosam architecto eligendi perspiciatis hic qui quas laudantium, repellat consequatur? Culpa dolorem doloribus ipsam. Odit laudantium nam sunt fugiat modi, iste totam?</p>
+
+                    </div>
+                    
+                </section> <!-- fim da seção historia-->
+                <section id="menu" class="centro">
+                    <img src="imgs/ilustracaoFloral2.png" alt="logo menu" width="150">
+                    <h2> MENU</h2>
+                    <ol>
+                        <li>
+                            <p> <strong>Crispy Pork Rinds </strong> </p>
+                            <p> Deep-fried pork skin, crunchy and salty — a perfect beer companion.</p>
+                            <p> R$ 30,00</p> 
+                        </li>
+                        <li>
+                            <p> <strong>Bolinho de Bacalhau</strong> </p>
+                            <p> Salt cod fritters with herbs, golden and crispy outside, soft inside.</p>
+                            <p> R$ 10,00</p> 
+                        </li> 
+                        <li>
+                            <p> <strong>Mini Acarajé</strong> </p>
+                            <p> Black-eyed pea fritters filled with spicy shrimp and vatapá (peanut-coconut paste).</p>
+                            <p> R$ 20,00</p> 
+                            
+                        </li>
+                        <li>
+                            <p> <strong>Chicken Hearts Skewers</strong> </p>
+                            <p> Grilled chicken hearts seasoned with rock salt — a Brazilian BBQ favorite..</p>
+                            <p> R$ 25,00</p> 
+                        </li>
+                        <li>
+                            <p> <strong>Manioc Fries</strong> </p>
+                            <p> Fried cassava sticks, crispy outside and fluffy inside, served with garlic mayo.</p>
+                            <p> R$ 30,00</p> 
+                        </li>
+                        
+                        <li>
+                            <p> <strong>Coxinha </strong> </p>
+                            <p> Chicken croquette shaped like a teardrop, filled with shredded chicken and cream cheese.</p>
+                            <p> R$ 30,00</p> 
+                        </li>
+
+                    </ol>
+                
+                </section>
+
+                <section id="galeria" class="centro" >
+                    <img src="imgs/ilustracaoFloral2.png" alt="logo menu" width="150">
+                    <h2>Gallery</h2>
+                    <img src="imgs/ambiente1.jpg" alt="espaco conforto" style= "width: 30%">
+                    <img src="imgs/ambiente2.jpg" alt="espaco central" style= "width: 30%">
+                    <img src="imgs/ambiente5.jpg" alt="espaco fundos" style= "width: 30%">
+                    <br>
+                    <img src="imgs/comida2.jpg" alt="cheese table" style= "width: 30%">
+                    <img src="imgs/comida3.jpg" alt="grilled meat" style= "width: 30%">
+                    <img src="imgs/comida4.jpg" alt="brazilian barbecue" style= "width: 30%">
+                </section>
+            </div>
+            
+        </main>
+
+        <footer id="rodape" class="centro">
+            
+            <nav >
+                <ul>
+                    <li><a href="#titulo">Title</a></li>
+                    <li><a href="#historia">History</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#galeria">Gallery</a></li>
+                </ul>  
+            </nav>      
+
+            
+            
+            <p>Boteco do Brasil 2025 - todos direitos reservados</p>
+            <a href="validation.html"> Click here to see the validation results</a>
+
+        </footer>
+
+    </div> <!--fim do container principal-->
+    
+</body>
+</html>
