@@ -1,0 +1,122 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2em;    
+}
+
+header {
+    background-color: #222222;
+    text-align: center;
+    padding-bottom: 5px;
+
+}
+
+header img {
+    width: 10%;
+    margin-top: auto;
+    position: relative;
+    top: 80px;
+}
+
+nav {
+    display: inline-block;
+    background-color:  #FFD700;
+    padding:2px;
+    margin-bottom:10px;
+    width: 80%;
+
+}
+main {
+    background-color: #F5F5DC;
+    font-size: 1em;
+    padding: 10px;
+}
+
+main img {
+    
+    width:20%;
+}
+
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding:2px;
+}
+
+footer a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    color:#ffff00;
+    text-decoration: none;        
+}
+
+footer a:hover {
+    background-color: #FFD700;
+    color: #000000;
+   
+}
+
+nav li {
+    display: inline;
+    width: 100%;
+    padding: 2px;
+}
+
+nav li a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.3em;
+    color:#000000;
+    text-decoration: none;  
+    padding: 10px;      
+}
+
+nav li a:hover {
+        background-color: #000000;
+        color:#f5deb3;        
+    }
+
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* container grid for Neighbourhood Walks page */
+.containerGrid {
+  display: grid;
+  grid-template-columns: auto auto;  
+  padding: 10px;
+  gap: 20px;
+}
+.containerGrid img {
+  width: 100%;
+}
+
+/* container grid for Walks in the Park page */
+.containerFlex {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha */
+  gap: 10px; /* espaçamento entre imagens */
+  justify-content: center; /* centraliza as linhas */
+  padding: 10px;
+}
+
+.item {
+  flex: 0 0 20%; /* 4 por linha, considerando o gap */
+  box-sizing: border-box;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover; /* mantém proporção sem distorcer */
+  border-radius: 8px; /* opcional: bordas arredondadas */
+}
+
+
+
+
+
