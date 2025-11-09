@@ -1,6 +1,6 @@
 # coursera
-Collections of  projects from coursera courses
-INTRODUCTION TO HTML 5 - UNIVERSITY OF MICHIGAN - COLLEEN VAN LENT and CHARLES RUSSEL SEVERANCE
+Collections of  projects from COURSERA courses:
+INTRODUCTION TO HTML 5 AND INTRODUCTION TO CSS3- UNIVERSITY OF MICHIGAN - COLLEEN VAN LENT and CHARLES RUSSEL SEVERANCE
 
 Final Project Description
 Specification
