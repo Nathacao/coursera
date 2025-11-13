@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Final Project - Introduction to CSS3">
+    <meta name="keywords" content="HTML, CSS, BOOTSTRAP, COURSERA, UNIVERSITY OF MICHIGAN">
+    <meta name="author" content="Nathanael Andrade">
+    <meta name="professor" content="Colleen van Lent">
+
+    <title>Boteco do Brasil - Book a table</title>
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+<body>
+    <a href="#principal" class="skipLink">Skip to main content</a>
+    <div id="container">
+        <header>
+            <div id="cabecalho">
+                <img src="img/logoBoteco.png" alt="logotipo Boteco do Brasil">
+                <nav id="topo">
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="menu.html">Menu</a></li>
+                        <li> <a href="gallery.html">Gallery</a></li>
+                        <li> <a href="contato.html">Contact</a></li>
+                        <li> <a href="book.html" class="ativo special" ><strong>Book a table</strong></a></li> 
+                    </ul>
+                </nav>
+            </div>
+            <!-- <img src="img/abertura.jpg" alt="mesa preparada" style="width: 100%;"> -->
+        </header>
+        <main id="principal">
+            <section>
+                <div id="tituloSec">                                     
+                    <h3>RESERVATION</h3>
+                    <p> Book a Table</p>
+                    <img src="img/ilustracaoFloralDown.png" alt="logo com talheres" width="200">
+                </div>
+                
+                <div id="navTitulo">
+                    <nav>
+                        <ul>
+                            <li><a href="contato.html">Information</a></li>
+                            <li><a href="contato2.html">Forms</a></li>
+                            <li><a href="book.html" class="linkAtivo">Book a Table</a></li>
+                        </ul>
+                        
+                    </nav>
+                </div>                
+                <hr>            
+            </section>
+            
+            <div id="conteudo">
+                 <form> 
+
+                    <fieldset class="fieldsetting">
+                        <legend> Personal Data</legend>
+                        <input type="text" name="bookname" id="bname" placeholder="Your name" class="bookInput" autofocus required>                        
+                        <input type="email" name="bookmail" id="bmail" placeholder="Your email" class="bookInput" required> 
+                        <input type="text" name="bookphone" id="bphone"  placeholder="Cell Number" class="bookInput" required>
+                    </fieldset>
+
+                    
+
+                    <fieldset class="fieldsetting">
+                        <legend>Scheduling Data</legend>
+                        <input type="date" name="bookdate" id="bdate" class="bookInput" required>
+                        <input type="time" name="booktime" id="btime" class="bookInput" required>
+                        <input type="number" name="numnumber" id="nnumber" placeholder="No. of people" class="bookInput" required>
+                    </fieldset>
+
+                    
+
+                    
+                    <textarea name="booktext" id="btext" rows="4" cols="50" class="bookText" placeholder="Message"></textarea>
+                    
+                    <button type="submit" class="botao">Send Message</button>                 
+                    
+
+                </form>
+                    
+
+            </div>
+
+        </main>
+        <footer id="rodape">
+            <div>
+                <div class="social">
+                    <a href="#" target="_blank"> <img src="img/mface.png" alt="icone do facebook"></a>
+                    <a href="#" target="_blank"> <img src="img/minsta.png" alt="icone do instagram"></a>
+                    <a href="#" target="_blank"> <img src="img/mx.png" alt="icone do x"></a>                    
+                    <a href="#" target="_blank"> <img src="img/mzap.png" alt="icone do linkedin"></a>
+                    <a href="#" target="_blank"> <img src="img/myoutube.png" alt="icone do youtube"></a>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li> <a href="index.html">Home</a></li>
+                            <li> <a href="menu.html">Menu</a></li>
+                            <li> <a href="gallery.html">Gallery</a></li>
+                            <li> <a href="contato.html">Contact</a></li>
+                            <li> <a href="book.html" class="ativo">Book a table</a></li>                        
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <p>Boteco do Brasil 2025 - All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

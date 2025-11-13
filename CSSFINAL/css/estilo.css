@@ -1,0 +1,645 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #000000; /*#887d3b;*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* estilos para o SKIP TO THE MAIN CONTENT */
+
+.skipLink {    
+    /* Posiciona fora da tela, mas mantém acessível a leitores de tela */
+    position: absolute;
+    top: -40px; /* Esconde acima da área de visualização */
+    left: 0;      
+    z-index: 1000; /* Garante que fique acima de outros elementos quando visível */    
+    /* Estilos básicos para o link, mesmo quando invisível, para evitar transição estranha */
+    padding: 8px 15px;
+    background-color: #333;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+}
+
+/* Mostra o link e o traz para a posição visível quando recebe o foco (via Tab) */
+.skipLink:focus {
+    top: 0; /* Traz o link de volta para a tela */   
+    outline: 3px solid #00f; /* Melhore o foco para destaque de acessibilidade */
+    outline-offset: 2px;
+}
+
+/* Definições globais */
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #faebd7;
+    padding: 0px;
+}
+
+#cabecalho  {
+    background-color: #2f4f4f;
+   
+}
+
+#cabecalho img {
+    width: 7%;
+    padding: 10px;
+
+}
+
+#cabecalho nav {
+    float: right;
+}
+
+
+nav li {
+    display: inline;
+    width: 100%;
+    padding: 2px;
+}
+
+nav li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color:#f9db4a;
+    text-decoration: none;  
+    padding: 10px;   
+       
+}
+
+nav li a:hover {
+    border-bottom: 1px solid #efb810 ;
+    
+}
+
+/* Menu ativo */
+
+.ativo {
+    color: #ffffff;
+
+}
+
+/* destaque para BOOK A TABLE */
+
+.special {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #efb810; 
+    margin-right: 10px; 
+    border-radius: 10px;
+}
+/*
+.special a:hover {
+    color: #ff0000;
+    font-size: 1.1em;    
+    padding: 10px
+}*/
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+
+#titulo {
+    text-align: center;
+    padding: 20px;       
+}
+
+#tituloSec {
+    text-align: center;
+    padding: 5px;    
+}
+
+#tituloSec h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #000000;
+    }
+
+#tituloSec > p {
+    font-size: 2.2em; 
+    color: #daa520;
+    margin:2px;
+
+}
+
+#rodape {
+    text-align: center;
+    background-color: #2f4f4f;
+}
+
+#rodape p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#rodape a {
+    font-size: 0.8em;
+}
+
+.social {
+    padding:15px;
+    background-color: #5f9ea0;
+}
+
+.social img {
+    width: 40px;
+}
+
+/* estrututra DISPLAY GRID para index.html */
+
+.containerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+  grid-template-rows: auto auto auto;
+  /*padding: 10px; */
+  gap: 0px;
+}
+
+/* Estilo para cada bloco de imagem/texto */
+
+.itemGrid {
+    padding: 20px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Imagens responsivas */
+
+.itemGrid img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.fundo1 {
+    background-color: #daa520;
+    text-align: justify;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo2 {
+    background-color: #faebd7 ;
+
+}
+
+@media(max-width: 575.98px) {
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+        
+    #container {
+         width:90%;         
+    }
+
+    #cabecalho {
+        text-align: center;
+        background-color:#2f4f4f;
+        height: fit-content;
+    }
+
+    #cabecalho nav {
+        float:none;
+        padding:5px;
+    }
+
+    #cabecalho img {
+        width: 20%;
+        padding: 5px;
+    }
+
+    nav li {
+        display: inline;
+        width: 100%;
+        padding: 2px;
+    }
+
+    nav li a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8em;
+        color:#f9db4a;
+        text-decoration: none;  
+        padding: 10px;  
+    }
+
+    nav li a:hover {
+        color:#ff0000 ;
+    }
+
+    .special {        
+        padding: 5px;   
+        border:none;     
+        margin-right: 5px; 
+        
+    }   
+
+    .special a:hover {
+        font-size:1em;
+        color: #ff0000;     
+       
+    }
+
+    #principal {
+        text-align: justify;
+    }
+    
+    .containerGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .itemGrid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .itemGrid img {
+        max-width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767.98px) {
+       
+      
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+        
+    #container {
+         width:90%;         
+    }
+
+    #cabecalho {
+        text-align: center;
+        background-color:#2f4f4f;
+        height: fit-content;
+    }
+
+    #cabecalho nav {
+        float:none;
+        padding:5px;
+    }
+
+    #cabecalho img {
+        width: 8%;
+        padding: 5px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 2px;
+    }
+
+    nav li a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8em;
+        color:#f9db4a;
+        text-decoration: none;  
+        padding: 10px;  
+    }
+
+    nav li a:hover {
+        color:#ff0000 ;
+    }
+
+    .special {        
+        padding: 5px;   
+        border:none;     
+        margin-right: 5px; 
+        
+    }   
+
+    .special a:hover {
+        font-size:1em;
+        color: #ff0000;     
+       
+    }
+
+    #principal {
+        text-align: justify;
+    }
+}
+    
+
+@media (max-width: 768px) {
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+        
+    #container {
+         width:85%;         
+    }
+
+    #cabecalho {
+        text-align: center;
+        background-color:#2f4f4f;
+        height: fit-content;
+    }
+
+    #cabecalho nav {
+        float:none;
+        padding:5px;
+    }
+
+    #cabecalho img {
+        width: 8%;
+        padding: 5px;
+    }
+
+    nav li {
+        display: inline;
+        padding: 2px;
+    }
+
+    nav li a {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8em;
+        color:#f9db4a;
+        text-decoration: none;  
+        padding: 10px;  
+    }
+
+    nav li a:hover {
+        color:#ff0000 ;
+    }
+
+    .special {        
+        padding: 5px;   
+        border:none;     
+        margin-right: 5px; 
+        
+    }   
+
+    .special a:hover {
+        font-size:1em;
+        color: #ff0000;     
+       
+    }
+
+    #principal {
+        text-align: justify;
+    }    
+
+    .containerGrid {
+        grid-template-columns: 1fr;
+    }
+
+.itemGrid {
+    flex-direction: column;
+    text-align: center;
+}
+
+.itemGrid img {
+    max-width: 90%;
+    margin-bottom: 15px;
+   }
+}
+
+
+
+@media(min-width: 768px) and (max-width: 1199.98px) {
+        
+    .container {
+        width:80%;
+        margin: 0 auto;
+    }
+}
+
+@media(min-width: 1200px) {
+        
+    .container {
+        width:70%;
+        margin: 0 auto;
+    }
+}
+
+
+/* estilos para as paginas secundarias */
+
+hr {
+    background-color: rgba(143, 139, 141, 0.166); /* Define a cor de fundo como vermelha */
+    height: 2px; /* Define a altura (espessura) da linha */
+    border: none; /* Remove a borda padrão para controlar a aparência apenas com background */
+    }
+
+/* barra de navegação das paginas internas - menu/galeria/gontato/book */
+
+#navTitulo {
+    text-align: center;
+}    
+
+#navTitulo ul{
+    padding-left: 0px;
+}    
+
+
+#navTitulo nav li {
+    display: inline;
+    width: 100%;
+    padding: 2px;    
+}
+
+#navTitulo nav li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    color:#000000;
+    text-decoration: none;  
+    padding: 10px;   
+       
+}
+
+#navTitulo nav li a:hover {
+    background-color: #efb810 ;
+} 
+
+/* menu ativo na barra secundaria */
+
+.linkAtivo {
+    border: 2px solid #efb810;
+}
+
+#conteudo {
+    text-align: center;
+}
+
+#conteudo ol {
+    list-style-type: none;
+}
+
+/* configuraçÃO DISPLAY FLEX para as galerias de imagem em galeria.html e galeria2.html */
+
+.galeria {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 16px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.galeria img {
+    /* flex-basis: 300px; */ /* Define uma largura base para cada imagem */
+    /* flex-grow: 1; */ /* Permite que as imagens cresçam para preencher o espaço disponível */
+    width: 100%; 
+    max-width: 350px; 
+    height: 300px; 
+    object-fit: cover; /* Recorta a imagem para cobrir a área sem distorcer */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease-in-out; /* transição suave para o hover */
+}
+
+.galeria img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* estilos para os campos de informação - contato.html */
+
+.tituloInforma {
+    display: inline-block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    color: #ffffff;
+    margin: 5px 0 5px 0;
+    padding: 10px;
+    border-radius: 10px;  
+    background-color: #daa520;
+}
+
+
+.tituloInforma p {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    margin-bottom: 20px;
+
+}
+
+
+
+/* estilos para os campos de formulario - FORMS de contato2.html */
+
+.meuInput {
+  width: 70%; /* Largura em pixels */
+  height: 30px;  /* Altura em pixels */
+  font-size: 16px; /* Tamanho da fonte */
+  padding: 5px; /* Espaçamento interno */
+  margin: 10px;
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 10px;
+}
+
+.meuText {
+  width: 70%; /* Largura em pixels */  
+  font-size: 16px; /* Tamanho da fonte */
+  padding: 5px; /* Espaçamento interno */
+  margin: 20px;
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 10px;
+
+}
+
+.botao {
+    width: 30%;
+    height: 50px; 
+    color: #ffffff;
+    background-color: #daa520;
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 5px; /* Espaçamento interno */
+    margin: 20px;
+    border: 1px solid #daa520; /* Borda */
+    border-radius: 10px;
+
+}
+
+/* estilos para os campos de formulario de BOOK A TABLE - book.html */
+
+.fieldsetting {    
+    display: inline-block;
+    width:80%;
+    padding: 5px; /* Espaçamento interno */
+    margin: 20px;
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 10px;
+
+}
+
+.bookInput {
+  width: 30%; /* Largura em pixels */
+  height: 30px;  /* Altura em pixels */
+  font-size: 16px; /* Tamanho da fonte */
+  padding: 5px; /* Espaçamento interno */
+  margin: 5px;
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 10px;
+}
+
+.bookText {
+  width: 80%; /* Largura em pixels */  
+  font-size: 16px; /* Tamanho da fonte */
+  padding: 5px; /* Espaçamento interno */
+  margin: 20px;
+  border: 1px solid #ccc; /* Borda */
+  border-radius: 10px;
+
+}
+
+
+
+/*
+
+.itemGrid {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.itemGrid:hover {
+    transform: scale(1.02);
+    background-color: #e0e0e0;
+}
+
+.itemGrid img {
+    transition: transform 0.3s ease;
+}
+
+.itemGrid img:hover {
+    transform: scale(1.05);
+}
+*/
+
